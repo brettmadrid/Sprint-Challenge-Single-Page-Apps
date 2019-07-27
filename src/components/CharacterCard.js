@@ -4,7 +4,6 @@ import { Card, Icon, Image } from "semantic-ui-react";
 export default function CharacterCard(props) {
   const { image, name, status, species, gender, location, origin } = props.char;
   return (
-    <div>
       <Card>
         <Image src={image} alt="character photos" wrapped ui={false} />
         <Card.Content>
@@ -24,6 +23,5 @@ export default function CharacterCard(props) {
           Episodes
         </Card.Content>
       </Card>
-    </div>
   );
 }
